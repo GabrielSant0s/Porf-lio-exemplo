@@ -15,6 +15,7 @@ $cor5: #8C3F23;
 
 @import 'scroll.scss';
 @import 'slider.scss';
+@import 'breakpoints.scss';
 
 body, html {
     scroll-behavior: smooth;
@@ -227,6 +228,72 @@ body, html {
             margin: 35px;
         }
         
+    }
+    #faq {
+        height: 100vh;
+
+        h2 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        #client-area {
+            //background: red;
+            
+            @include md {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .client {
+                display: flex;
+                gap: 30px;
+                margin-left: 30px;
+
+                &:nth-child(n + 4) {
+                    display: none;
+
+                    @include md {
+                        display: flex;
+                    }
+                }
+                img {
+                    width: 70px;
+                    height: 70px;
+                    background: black;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .txtbox {
+                    height: 75px;
+                    width: 200px;
+                    background: #ffffff;
+                    border-radius: 20px;
+                    margin-bottom: 15px;
+                    
+
+                    h4 {
+                        font-size: .90em;
+                        margin: 10px 0 0 10px;
+                        
+                    }
+
+                    p {
+                        font-size: .75em;
+                        margin: 0px 0 0 10px;
+                    }
+                }
+            }
+
+            
+        }
+
+        #questions {
+            h3 {
+                text-align: center;
+                margin: 30px;
+            }
+        }
     }
     #social {
         height: 30vh;

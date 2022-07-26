@@ -316,6 +316,59 @@ body #projetos h2, html #projetos h2 {
   text-align: center;
   margin: 35px;
 }
+body #faq, html #faq {
+  height: 100vh;
+}
+body #faq h2, html #faq h2 {
+  text-align: center;
+  margin: 30px;
+}
+@media (min-width: 740px) {
+  body #faq #client-area, html #faq #client-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+body #faq #client-area .client, html #faq #client-area .client {
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+}
+body #faq #client-area .client:nth-child(n+4), html #faq #client-area .client:nth-child(n+4) {
+  display: none;
+}
+@media (min-width: 740px) {
+  body #faq #client-area .client:nth-child(n+4), html #faq #client-area .client:nth-child(n+4) {
+    display: flex;
+  }
+}
+body #faq #client-area .client img, html #faq #client-area .client img {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #faq #client-area .client .txtbox, html #faq #client-area .client .txtbox {
+  height: 75px;
+  width: 200px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+body #faq #client-area .client .txtbox h4, html #faq #client-area .client .txtbox h4 {
+  font-size: 0.9em;
+  margin: 10px 0 0 10px;
+}
+body #faq #client-area .client .txtbox p, html #faq #client-area .client .txtbox p {
+  font-size: 0.75em;
+  margin: 0px 0 0 10px;
+}
+body #faq #questions h3, html #faq #questions h3 {
+  text-align: center;
+  margin: 30px;
+}
 body #social, html #social {
   height: 30vh;
   display: flex;
